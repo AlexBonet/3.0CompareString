@@ -25,11 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
         button.setOnClickListener(view -> {
             String input = inputTxt.getText().toString();
-            String key = String.valueOf(R.string.key);
+            String key = getString(R.string.key);
             if (input.equals(key)){
                 txtView.setText("Clave correcta :)");
             }else{
-                txtView.setText(R.string.key);
+                txtView.setText("Clave incorrecta :(");
             }
         });
     }
